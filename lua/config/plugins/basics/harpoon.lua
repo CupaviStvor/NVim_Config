@@ -8,8 +8,8 @@ return{
     require("harpoon"):setup()
     end,
     keys = {
-        { "<leader>F", function() require("harpoon"):list():add() end, desc = "harpoon file", },
-        { "<leader>f", function() local harpoon = require("harpoon") harpoon.ui:toggle_quick_menu(harpoon:list()) end, desc = "harpoon quick menu", },
+        { "<leader>L", function() require("harpoon"):list():add() end, desc = "harpoon file", },
+        { "<leader>l", function() local harpoon = require("harpoon") harpoon.ui:toggle_quick_menu(harpoon:list()) end, desc = "harpoon quick menu", },
         { "<leader>q", function() require("harpoon"):list():select(1) end, desc = "harpoon to file 1", },
         { "<leader>w", function() require("harpoon"):list():select(2) end, desc = "harpoon to file 2", },
         { "<leader>e", function() require("harpoon"):list():select(3) end, desc = "harpoon to file 3", },
