@@ -23,16 +23,10 @@ require("lazy").setup({
   spec = {
     -- import your plugins
     {
+    	import = 'config.plugins'
+    },
+    {
     	import = 'config.plugins.looks'
-    },
-    {
-    	import = 'config.plugins.lsp'
-    },
-    {
-    	import = 'config.plugins.basics'
-    },
-    {
-    	import = 'config.plugins.other'
     },
   },
   -- automatically check for plugin updates
