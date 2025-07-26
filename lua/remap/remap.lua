@@ -21,7 +21,7 @@ vim.api.nvim_set_keymap('n', '<C-l>', '<C-w>l', { noremap = true, silent = true 
 
 --  NOTE: Markdown Preview keymaps
 
-vim.keymap.set("n", "<leader>mp", ":MarkdownPreviewToggle<CR>")
+vim.keymap.set("n", "<leader>pn", ":MarkdownPreviewToggle<CR>")
 
 --  NOTE: Iterate over the buffers
 
@@ -31,9 +31,14 @@ vim.keymap.set("n", "<leader>;",":bd<CR>")
 
 --  NOTE: Yank to clipboard
 
-    
 vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
 
 --  NOTE: Note-taking keymaps
  
 vim.keymap.set("n", "<leader>mn",":e ~/Documents/Notes/temp_notes/note_" .. os.date('%Y-%m-%d_%H-%M') .. ".md<CR>")
+
+--  NOTE: Go to directory
+
+vim.keymap.set("n", "cd", ":cd ")
+
+vim.keymap.set('n', '<leader>-', require('oil').open, { desc = 'Open file explorer' })
